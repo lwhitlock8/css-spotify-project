@@ -4,33 +4,24 @@ prev: "/"
 next: network-analysis
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla tellus, tempus sed lobortis quis, venenatis ac ante. Maecenas accumsan augue ultricies metus hendrerit, in ultrices urna fringilla. Suspendisse lobortis egestas magna, sit amet fermentum ligula tincidunt vitae. Suspendisse cursus non dui a vulputate. Cras vestibulum vulputate enim eu placerat. Ut scelerisque semper justo sit amet auctor. Aliquam sit amet iaculis tortor.
+#### **Dataset**
+Two datasets were created for our analysis: 
+1. Artist Data
+1. Raw Song Data.
 
-> Nulla in justo hendrerit, tincidunt mauris et, porta est. Donec in leo vitae est ultrices dapibus id nec tortor. Maecenas ut ipsum eu nisl cursus facilisis scelerisque eu ex. Aliquam euismod elementum libero, at vehicula ipsum.
+**1. Artist Data**
+This dataset contains all of the artists that have performed at Coachella, from 1999 to 2023, which stage they performed on and information about each artist (id, music genre, followers, popularity level). We retrieved this information by scraping the Wikipedia page: “Coachella Festival Line-Ups,” and by using the Spotify API.
 
-Nam commodo lorem quis tortor euismod, ut ultrices orci aliquet. Sed eget dui nec sem ullamcorper convallis id nec ante. Aliquam ultricies a massa quis semper. Donec suscipit augue ut sagittis hendrerit. Aliquam erat volutpat. Proin aliquet maximus nibh, id aliquet justo maximus at. Sed accumsan ante id aliquam pellentesque. 
+**2. Song Data**
+This dataset contains raw lyric data sourced from the MusixMatch API. This API allows for free access to 30% of lyrics for each song with a reasonable rate limit. Due to API limits and the 30% cap on lyrics, we decided to focus only on artists that performed on the Coachella Main Stage, regardless of the year. We searched for the top 5 songs that have lyrics on MusixMatch for each artist, finding a total of 1292 songs that met the criteria.
 
-![](/images/dtu-logo.png)
+#### **Why These Datasets?**
+These datasets were chosen for a few reasons, mainly that they contain the necessary data that aligns with the goal for our analysis. We are analyzing data from Coachella since its first year in 1999 and the Wikipedia page contains all of the Coachella information needed. Combining the Coachella data with artist data from the Spotify API, we created a completed data set (for our analysis). Furthermore, we know that both our datasets contain accurate data, as it was retrieved from reliable sources, such as Wikipedia, Spotify and MusixMatch. Both datasets are also of desirable size, allowing us to conduct a thorough analysis. Lastly, the data we retrieved was accessible and available for use, another important aspect of a dataset. 
 
-Aliquam nec hendrerit quam. Suspendisse maximus eros sollicitudin, accumsan turpis eu, blandit nulla. Nunc lorem elit, molestie at libero gravida, placerat consectetur ante. Sed tincidunt viverra tellus a vehicula.
+#### **Data Cleaning & Preprocessing**
+The **Artist Dataset** did not need any cleaning or preprocessing. It was important that we did not clean our dataset to get rid of duplicates, because one of the main aspects of our analysis was seeing if artists performed multiple times, and seeing which stage they returned to perform on.
 
+The **Song Dataset** needed some cleaning up. This included removing all punctuation, stopwords, numbers, and the commercial use copyright tag generated from the MusixMatch API. We also added a few variables from the artist dataset (artist id, artist name, genres) to make matching the datasets easier later on. The final dataset also includes two types of cleaned lyrics, one with stopwords and one without stopwords, the sentiment of the song, and the sentiment score of each song. 
 
-1. Lorem ipsum dolor sit amet
-1. Lorem ipsum dolor sit amet
-1. Lorem ipsum dolor sit amet
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit lobortis turpis. Praesent porttitor, turpis eu posuere molestie, sem dolor scelerisque sapien, eu aliquet ante felis ac metus. Pellentesque semper ultricies urna. Aenean auctor, turpis ut convallis ultrices, eros tellus bibendum risus, eu varius velit ante et diam. 
-
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
-
-In suscipit lorem orci, eu placerat nibh dignissim ut. Nullam consequat nisl dui, in ornare risus porttitor sed. Integer vitae nibh semper purus ultrices rutrum. Pellentesque non diam ornare, imperdiet elit a, tempus lacus. Suspendisse viverra euismod dapibus.
-
-Suspendisse non tellus faucibus, dapibus leo at, elementum magna. Fusce quis ante ex. In non ex eleifend, luctus risus quis, dapibus velit. Nulla facilisi. Integer iaculis arcu at fermentum varius. Donec auctor dolor non dolor pulvinar luctus. Mauris vestibulum lacinia nisl, a dictum erat molestie sed. Vivamus vel blandit turpis, nec sollicitudin massa. Nunc velit eros, tristique elementum congue eget, auctor dictum tellus. 
-
-Quisque iaculis, sem quis imperdiet faucibus, nunc lorem feugiat purus, vestibulum condimentum turpis turpis ut ante. Donec vestibulum lectus ut ullamcorper condimentum. Curabitur fermentum nulla vitae arcu sollicitudin pulvinar.
 
 <img src="/images/dtu-logo.png" width="200" />
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse eu tellus ut erat porttitor luctus. Vivamus aliquam auctor massa, in auctor orci. Ut quis enim ut lorem consectetur blandit dictum eu mauris.
