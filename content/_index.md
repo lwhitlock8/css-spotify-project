@@ -1,16 +1,15 @@
 ---
-title: Home Page
+title: The Evolution of Coachella Artists
 layout: single
 next: data-description
 ---
 
-Donec posuere justo at risus [efficitur convallis](#). Donec enim nibh, aliquet vel risus id, tincidunt consectetur felis. Proin porttitor odio a orci accumsan bibendum id at risus. Sed a posuere odio, ac lobortis augue. Maecenas aliquet ipsum vel libero dignissim, non aliquet justo eleifend. Fusce mollis, ante eget tincidunt imperdiet, mi ligula venenatis ex, ut pulvinar nunc ipsum tempus eros. Aliquam erat volutpat. Sed id _iaculis arcu_, sit amet varius libero. Etiam quis nisl pretium, eleifend quam nec, rutrum sapien. **Donec rutrum accumsan orci.**
+![](/images/intro_image.png)
 
+Welcome to Coachella's artist analysis! Dive into the making of each year's artist selection with our in-depth lineup analysis, uncovering different rythms, genres and hidden gems that define Coachella. 
 
-## Math formula
+Whether you attend Coachella anually, or are a music enthusiast, join us on a journey through the evolution of Coachella's lineups, where every performance leaves a lasting impression. Explore, discover and immerse yourself in the magic of Coachella like never before. 
 
-
-$$ x^n + y^n = z^n $$
 
 ## Code chunk
 
@@ -36,4 +35,4 @@ Phasellus viverra tellus viverra purus placerat, et lacinia mauris tristique. Na
 
 ## [Explainer Notebook](explainer-notebook.html)
 
-Aenean non augue vulputate, bibendum ligula ac, euismod arcu. Proin consequat, urna at lobortis sodales, ligula nulla molestie dolor, et interdum nulla arcu eu lacus. Aenean maximus mi vel augue blandit, quis vehicula libero egestas. In mollis nibh in turpis sodales, eget luctus sem pretium. Integer lobortis diam vel nisi laoreet, ut condimentum risus ultrices. Praesent diam risus, imperdiet at lorem in, hendrerit auctor ex.
+The explainer notebook is designed for Coachella lovers, artists, data entusiasts and anyone else interested in gaining insights on one of the most popular music festivals in the world!

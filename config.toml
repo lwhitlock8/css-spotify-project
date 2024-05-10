@@ -1,13 +1,13 @@
 baseURL = "https://peterampazzo.github.io/project-website-template/"
-title = "Project Title"
-description = "This is a project description"
+title = "Coachella Artist Analysis"
+description = "Our project is an analysis of the artists that have performed at Coachella, using 25 years of Coachella data"
 relativeURLs = true
 theme = "theme" 
 [params]
-    authors = ["Henrik Nielsen", "Inga Jensen", "Mikkel Andersen"]
+    authors = ["Elinor Funk", "Leland Whitlock", "Marlo Anzarut"]
     notebook = "/explainer-notebook.html"
     data = "https://drive.google.com"
-    github = "https://github.com/peterampazzo/project-website-template"
+    github = "https://github.com/lwhitlock8/css-spotify-project"
     [[params.nav]]
         label = "Data"
         link = "/data-description"
