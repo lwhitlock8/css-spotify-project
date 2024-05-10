@@ -12,7 +12,7 @@
       <link>http://localhost:1313/project-website-template/data-description/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project-website-template/data-description/</guid>
-      <description>For this analysis, we gathered data from three sources: the Wikipedia page: “Coachella Festival Line-Ups,” the Spotify API and the MusixMatch API. With this, we created two datasets, for our artist data and for our song data.&#xA;1. Artist Data Contains all of the artists that have performed at Coachella, from 1999 to 2023. Contains information on which stage they performed on. Artist variables: id, music genre, followers, popularity level.</description>
+      <description>For this analysis, we gathered data from three sources: the Wikipedia page: “Coachella Festival Line-Ups,” the Spotify API and the MusixMatch API. With this, we created two datasets, for our artist data and for our song data.&#xA;1. Artist Data&#xA;Contains all of the artists that have performed at Coachella, from 1999 to 2023. Contains information on which stage they performed on. Artist variables: id, music genre, followers, popularity level.</description>
     </item>
     <item>
       <title>Network analysis</title>
