@@ -117,8 +117,9 @@
     <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
 
         <div class="pl-4">
-            <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="http://localhost:1313/project-website-template/">
-                Coachella Artist Analysis
+            <a href="http://localhost:1313/project-website-template/" class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">
+                
+                <img src="http://localhost:1313/project-website-template//images/logo1.png" alt="Icon" class="h-10 w-15 mr-2">
             </a>
         </div>
 
@@ -159,12 +160,20 @@
             <div class="font-sans">
                 <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">Text analysis</h1>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla tellus, tempus sed lobortis quis, venenatis ac ante. Maecenas accumsan augue ultricies metus hendrerit, in ultrices urna fringilla. Suspendisse lobortis egestas magna, sit amet fermentum ligula tincidunt vitae. Suspendisse cursus non dui a vulputate. Cras vestibulum vulputate enim eu placerat. Ut scelerisque semper justo sit amet auctor. Aliquam sit amet iaculis tortor.</p>
-<blockquote>
-<p>Nulla in justo hendrerit, tincidunt mauris et, porta est. Donec in leo vitae est ultrices dapibus id nec tortor. Maecenas ut ipsum eu nisl cursus facilisis scelerisque eu ex. Aliquam euismod elementum libero, at vehicula ipsum.</p>
-</blockquote>
-<p>Nam commodo lorem quis tortor euismod, ut ultrices orci aliquet. Sed eget dui nec sem ullamcorper convallis id nec ante. Aliquam ultricies a massa quis semper. Donec suscipit augue ut sagittis hendrerit. Aliquam erat volutpat. Proin aliquet maximus nibh, id aliquet justo maximus at. Sed accumsan ante id aliquam pellentesque. Aliquam nec hendrerit quam. Suspendisse maximus eros sollicitudin, accumsan turpis eu, blandit nulla. Nunc lorem elit, molestie at libero gravida, placerat consectetur ante. Sed tincidunt viverra tellus a vehicula.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit lobortis turpis. Praesent porttitor, turpis eu posuere molestie, sem dolor scelerisque sapien, eu aliquet ante felis ac metus. Pellentesque semper ultricies urna. Aenean auctor, turpis ut convallis ultrices, eros tellus bibendum risus, eu varius velit ante et diam. In suscipit lorem orci, eu placerat nibh dignissim ut. Nullam consequat nisl dui, in ornare risus porttitor sed. Integer vitae nibh semper purus ultrices rutrum. Pellentesque non diam ornare, imperdiet elit a, tempus lacus. Suspendisse viverra euismod dapibus.</p>
+            <p>The text processing in this project includes wordclouds and analysis the genres for each of the ten Coachella stages/tents. This is done with the Python package &ldquo;Wordcloud&rdquo;, to visualize the genres for each tent to identify any trends.</p>
+<h3 id="sentiment-analysis"><strong>Sentiment Analysis</strong></h3>
+<p>In addition, text analysis on the lyrics was implemented. This was implemented by  analyzing the sentiment scores from the lyrics. This lyrics analysis only regards the artists from the main stage, and this restriction was made due to time limitation.</p>
+<p>It is important to note that all songs in the dataset come from performers that performed on the Main Stage of Coachella, so we cannot draw any conclusions on the festival as a whole, just the Main Stage. This is simply a limitation of the amount of textual data we could collect without a subscription to any lyric API.</p>
+<h4 id="sentiment-analysis-results"><strong>Sentiment Analysis Results</strong></h4>
+<p><img src="../images/sentiment_scores.png" alt=""></p>
+<p>This histogram shows the distribution of sentiment scores for all 1292 songs collected. A positive score means a positive sentiment and a negative score means a negative sentiment. We can see that there is a slight majority of songs that have a positive sentiment and the plot roughly follows a normal distribution. We expected songs to have more extreme sentiments, that is, there would be more songs that have large positive values or large negative values. Instead, it seems that most songs have relatively neutral sentiments, with few having strong positive or negative sentiments.</p>
+<p>Additionally, we looked at the distribution of positive, negative, and neutral scores for each year. In real terms, we looked at the sentiments of songs made by artists that performed on the Main Stage that year. Out of the 22 years observed, 17 had a majority of positive sentiments. This implies that the artists that perform on the Main Stage tend to produce positive sentiments with their discographies.</p>
+<p>While the overwhelming majority of years had an overall positive sentiment, it is not enough to conclude that any individual Coahella festival was particularly positive. Since the song/lyric data is not based off the set list of that individual performance, an artist at Coachella could&rsquo;ve performed entirely negative songs while scoring mostly positive in this analysis. What these graphs do show is that performers that have been invited to play the Main Stage tend to have discographies with positive sentiments.</p>
+<h3 id="lyrics-cloud-analysis"><strong>Lyrics Cloud Analysis</strong></h3>
+<p>In addition to sentiment analysis, we wanted to generate word clouds to identify trends in lyrics in Main Stage performances. Below is a cloud containing the lyrics for all songs regardless of the year.</p>
+<p><img src="../images/lyric_cloud.png" alt=""></p>
+<p>We generated a total of 23 word clouds which can all be found in the explainer notebook. A few trend were observed in these wordclouds created. Firstly, there are clearly groups of associated words that appear frequently, such as the &ldquo;love song&rdquo; group. This includes words such as: love, baby, babe, sexy, heart, etc. and could also include helper words such as: get, got, or tonight. There is also the appearance of other languages, mainly Spanish. It is very easy to tell which years included hispanic performers due to the appearance of que, el, la and other Spanish stopwords that were not removed by the English filter.</p>
+<p>Overall, there does not seem to be significant differences between the yearly word clouds. It is difficult to spot trends in these word clouds as often the most interesting words appear only once while words that are common among traditional pop themes (ex: love songs) dominate the word clouds. This is not to say that the years are all the same but there are not many standout years.</p>
 
             
             <hr class="border-b-2 border-gray-400 mt-8 mx-4">
@@ -191,7 +200,7 @@
                 <div class="px-8 mx-auto">
                     <ul class="pt-3 list-none px-0 flex">
                         <li>
-                            <a class="text-gray-600 no-underline py-2" href="../explainer-notebook.html"><i
+                            <a class="text-gray-600 no-underline py-2" href="https://nbviewer.org/github/lwhitlock8/css-spotify-project/blob/main/explainer.ipynb"><i
                                     data-feather="file-text" class="footer-icon"></i></a>
                         </li>
                         <li>

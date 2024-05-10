@@ -12,21 +12,21 @@
       <link>http://localhost:1313/project-website-template/data-description/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project-website-template/data-description/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla tellus, tempus sed lobortis quis, venenatis ac ante. Maecenas accumsan augue ultricies metus hendrerit, in ultrices urna fringilla. Suspendisse lobortis egestas magna, sit amet fermentum ligula tincidunt vitae. Suspendisse cursus non dui a vulputate. Cras vestibulum vulputate enim eu placerat. Ut scelerisque semper justo sit amet auctor. Aliquam sit amet iaculis tortor.&#xA;Nulla in justo hendrerit, tincidunt mauris et, porta est.</description>
+      <description>Dataset Two datasets were created for our analysis:&#xA;Artist Dataset Raw Song Dataset 1. Artist Data This dataset contains all of the artists that have performed at Coachella, from 1999 to 2023, which stage they performed on and information about each artist (id, music genre, followers, popularity level). We retrieved this information by scraping the Wikipedia page: “Coachella Festival Line-Ups,” and by using the Spotify API.&#xA;2. Song Data This dataset contains raw lyric data sourced from the MusixMatch API.</description>
     </item>
     <item>
       <title>Network analysis</title>
       <link>http://localhost:1313/project-website-template/network-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project-website-template/network-analysis/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla tellus, tempus sed lobortis quis, venenatis ac ante. Maecenas accumsan augue ultricies metus hendrerit, in ultrices urna fringilla. Suspendisse lobortis egestas magna, sit amet fermentum ligula tincidunt vitae. Suspendisse cursus non dui a vulputate. Cras vestibulum vulputate enim eu placerat. Ut scelerisque semper justo sit amet auctor. Aliquam sit amet iaculis tortor.&#xA;Nulla in justo hendrerit, tincidunt mauris et, porta est.</description>
+      <description>For this project a graph G was created, with artists as nodes, and link inbetween them if they performed at Coachella at the same stage, the same year. The graph G is visualized above.&#xA;For the network analysis, the average degree of each node was found. The maximum and the minimum degree was found as well, where the degree represents the number of links that each node has. In our case, this represents how many other aritsts that peformed on the same stage, the same year.</description>
     </item>
     <item>
       <title>Text analysis</title>
       <link>http://localhost:1313/project-website-template/text-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project-website-template/text-analysis/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla tellus, tempus sed lobortis quis, venenatis ac ante. Maecenas accumsan augue ultricies metus hendrerit, in ultrices urna fringilla. Suspendisse lobortis egestas magna, sit amet fermentum ligula tincidunt vitae. Suspendisse cursus non dui a vulputate. Cras vestibulum vulputate enim eu placerat. Ut scelerisque semper justo sit amet auctor. Aliquam sit amet iaculis tortor.&#xA;Nulla in justo hendrerit, tincidunt mauris et, porta est.</description>
+      <description>The text processing in this project includes wordclouds and analysis the genres for each of the ten Coachella stages/tents. This is done with the Python package &amp;ldquo;Wordcloud&amp;rdquo;, to visualize the genres for each tent to identify any trends.&#xA;Sentiment Analysis In addition, text analysis on the lyrics was implemented. This was implemented by analyzing the sentiment scores from the lyrics. This lyrics analysis only regards the artists from the main stage, and this restriction was made due to time limitation.</description>
     </item>
   </channel>
 </rss>

@@ -13,3 +13,6 @@ Whether you attend Coachella anually, or are a music enthusiast, join us on a jo
 ## [Explainer Notebook](https://nbviewer.org/github/lwhitlock8/css-spotify-project/blob/main/explainer.ipynb)
 
 The explainer notebook is designed for Coachella lovers, artists, data entusiasts and anyone else interested in gaining insights on one of the most popular music festivals in the world!
+
+![](/images/coachella_lineup.jpeg)
+* This is the Coachella lineup from 2022, to visualize how the lineups are presented. 

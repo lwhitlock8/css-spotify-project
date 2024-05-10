@@ -5,7 +5,7 @@ relativeURLs = true
 theme = "theme" 
 [params]
     authors = ["Elinor Funk", "Leland Whitlock", "Marlo Anzarut"]
-    notebook = "/explainer-notebook.html"
+    notebook = "https://nbviewer.org/github/lwhitlock8/css-spotify-project/blob/main/explainer.ipynb"
     data = "https://drive.google.com"
     github = "https://github.com/lwhitlock8/css-spotify-project"
     [[params.nav]]

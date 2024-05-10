@@ -28,4 +28,4 @@ The **Song Dataset** needed some cleaning up. This included removing all punctua
 The song dataset contains 1292 rows of song lyrics, 2791 KB, and has 9 variables. This dataset includes the top 5 songs (as determined by the MusixMatch API) for each artist that performed on the Main Stage of Coachella and the lyrics of each song. There is also a processed version of this dataset that includes cleaned lyrics and sentiment analysis scores.
 
 
-<img src="/images/dtu-logo.png" width="200" />
+<img src="/images/background.jpg" width="500" />
