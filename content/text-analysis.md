@@ -11,7 +11,7 @@ In addition, text analysis on the lyrics was implemented. This was implemented b
 It is important to note that all songs in the dataset come from performers that performed on the Main Stage of Coachella, so we cannot draw any conclusions on the festival as a whole, just the Main Stage. This is simply a limitation of the amount of textual data we could collect without a subscription to any lyric API.
 
 #### **Sentiment Analysis Results**
-<img src="/images/sentiment scores.png" width="200" />
+![](/images/sentiment_scores.png)
 
 This histogram shows the distribution of sentiment scores for all 1292 songs collected. A positive score means a positive sentiment and a negative score means a negative sentiment. We can see that there is a slight majority of songs that have a positive sentiment and the plot roughly follows a normal distribution. We expected songs to have more extreme sentiments, that is, there would be more songs that have large positive values or large negative values. Instead, it seems that most songs have relatively neutral sentiments, with few having strong positive or negative sentiments.
 
@@ -22,7 +22,7 @@ While the overwhelming majority of years had an overall positive sentiment, it i
 ### **Lyrics Cloud Analysis**
 In addition to sentiment analysis, we wanted to generate word clouds to identify trends in lyrics in Main Stage performances. Below is a cloud containing the lyrics for all songs regardless of the year.
 
-<img src="/images/lyric-cloud.png" width="200" />
+![](/images/lyric_cloud.png)
 
 We generated a total of 23 word clouds which can all be found in the explainer notebook. A few trend were observed in these wordclouds created. Firstly, there are clearly groups of associated words that appear frequently, such as the "love song" group. This includes words such as: love, baby, babe, sexy, heart, etc. and could also include helper words such as: get, got, or tonight. There is also the appearance of other languages, mainly Spanish. It is very easy to tell which years included hispanic performers due to the appearance of que, el, la and other Spanish stopwords that were not removed by the English filter. 
 
