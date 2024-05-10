@@ -6,8 +6,8 @@ next: network-analysis
 
 #### **Dataset**
 Two datasets were created for our analysis: 
-1. Artist Data
-1. Raw Song Data.
+1. ## [Artist Dataset](https://github.com/lwhitlock8/css-spotify-project/blob/main/data/coachella_artists_full.csv)
+1. ## [Raw Song Dataset](https://github.com/lwhitlock8/css-spotify-project/blob/main/data/lyrics_dataset.csv)
 
 **1. Artist Data**
 This dataset contains all of the artists that have performed at Coachella, from 1999 to 2023, which stage they performed on and information about each artist (id, music genre, followers, popularity level). We retrieved this information by scraping the Wikipedia page: “Coachella Festival Line-Ups,” and by using the Spotify API.
