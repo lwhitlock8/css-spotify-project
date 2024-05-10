@@ -21,7 +21,11 @@ These datasets were chosen for a few reasons, mainly that they contain the neces
 #### **Data Cleaning & Preprocessing**
 The **Artist Dataset** did not need any cleaning or preprocessing. It was important that we did not clean our dataset to get rid of duplicates, because one of the main aspects of our analysis was seeing if artists performed multiple times, and seeing which stage they returned to perform on.
 
+The artist dataset contains 2912 rows of artists, 428 KB, and has 7 variables. This includes data for every artist to perform at Coachella since its inception in 1999 including the which stage they performed on, which years they were invited, their popularity on Spotify, and their most applicable genres.
+
 The **Song Dataset** needed some cleaning up. This included removing all punctuation, stopwords, numbers, and the commercial use copyright tag generated from the MusixMatch API. We also added a few variables from the artist dataset (artist id, artist name, genres) to make matching the datasets easier later on. The final dataset also includes two types of cleaned lyrics, one with stopwords and one without stopwords, the sentiment of the song, and the sentiment score of each song. 
+
+The song dataset contains 1292 rows of song lyrics, 2791 KB, and has 9 variables. This dataset includes the top 5 songs (as determined by the MusixMatch API) for each artist that performed on the Main Stage of Coachella and the lyrics of each song. There is also a processed version of this dataset that includes cleaned lyrics and sentiment analysis scores.
 
 
 <img src="/images/dtu-logo.png" width="200" />
