@@ -1,0 +1,20 @@
+baseURL = "https://peterampazzo.github.io/project-website-template/"
+title = "Coachella Artist Analysis"
+description = "Our project is an analysis of the artists that have performed at Coachella, using 25 years of Coachella data"
+relativeURLs = true
+theme = "theme" 
+[params]
+    authors = ["Elinor Funk", "Leland Whitlock", "Marlo Anzarut"]
+    notebook = "/explainer-notebook.html"
+    data = "https://drive.google.com"
+    github = "https://github.com/lwhitlock8/css-spotify-project"
+    [[params.nav]]
+        label = "Data"
+        link = "/data-description"
+    [[params.nav]]
+        label = "Network"
+        link = "/network-analysis"
+    [[params.nav]]
+        label = "Text"
+        link = "/text-analysis"
+
